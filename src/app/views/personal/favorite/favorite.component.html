@@ -1,0 +1,14 @@
+<div class="favorite">
+    <div class="container">
+        <div class="favorite-title">
+            Избранное
+        </div>
+
+        <div class="favorite-empty" *ngIf="!products ||(products && products.length===0)">
+            <div class="">В избранном нет товаров</div> 
+            <button class="button" routerLink="/catalog">В каталог</button>
+        </div>
+
+        <app-favorite-card (onCountChange)="updateCount($event)"  *ngFor="let product of productss" [product]="product" [countInCart]="product.quantity" ></app-favorite-card>
+    </div>
+</div>
