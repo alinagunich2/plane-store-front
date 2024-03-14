@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { CategoryWithType } from 'src/types/category-with-type.type';
 import { CategoryType } from 'src/types/category.type';
 import { TypeType } from 'src/types/type.type';

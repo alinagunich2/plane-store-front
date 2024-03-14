@@ -46,6 +46,8 @@ export class CategoryFilterComponent implements OnInit{
   ngOnInit(): void {
     this.activatedRoute.queryParams.subscribe(params=>{
 
+      console.log(params)
+
       this.activeParams=ActiveParamsUtil.processParam(params)
 
 

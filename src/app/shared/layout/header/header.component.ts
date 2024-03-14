@@ -80,7 +80,7 @@ export class HeaderComponent implements OnInit{
     this.count=(data as {count:number} ).count
 
   
-   })
+   });
 
    this.cartService.count$
    .subscribe(count=>{
